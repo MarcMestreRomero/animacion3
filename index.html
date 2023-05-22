@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html LANG="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>animacion</title>
+    <style media="screen">
+      .personaje {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        background-position: -209px 0;
+        position: absolute;
+        left: 13%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .personaje1 {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        background-position: -209px 0;
+        position: absolute;
+        left: 20%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .personaje2 {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        position: absolute;
+        background-position: -209px 0;
+        left: 30%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .personaje3 {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        background-position: -209px 0;
+        position: absolute;
+        left: 40%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .personaje4 {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        background-position: -209px 0;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .personaje5 {
+        height:157px;
+        width:80px;
+        background:url("hombrecamina.png");
+        margin:0 auto;
+        background-position: -209px 0;
+        position: absolute;
+        left: 60%;
+        bottom: 25px;
+        animation: correr 1s steps(9 ) infinite;
+      }
+      .coche1 {
+        width: 240px;
+        height: 200px;
+        background: url(image/coche.png);
+        animation: coche 1s  infinite steps(3);
+      }
+      .coche2 {
+        width: 240px;
+        height: 200px;
+        background: url(image/coche.png);
+        animation: coche 0.7s infinite steps(3);
+      }
+
+
+
+      .fondo{
+        left: 0px;
+        right: 0px;
+        height: 960px;
+        width: 1500px;
+        position: absolute;
+        background:url("ciudad.jpg");
+      }
+
+      @keyframes coche {
+        0% {
+          background-position: 0px;
+        }
+
+        100% {
+          background-position: 801px;
+        }
+
+      }
+
+      @keyframes correr{
+        0%{
+          background-position: 0px;
+        }
+        100%{
+          background-position: -100px;
+        }
+
+        @keyframes mueve{
+                0%{
+                  left: 10px;
+                }
+                100%{
+                  left: 2000px;
+                }
+              }
+                @keyframes medalla{
+                  0%{
+                    background-position: 0px;
+                  }
+                  100%{
+                    background-position: -860px;
+                  }
+
+              }
+
+
+      }
+    </style>
+  </head>
+  <body>
+        <div class="fondo">
+        <div class="personaje"></div>
+        <div class="personaje1"></div>
+        <div class="personaje2"></div>
+        <div class="personaje3"></div>
+        <div class="personaje4"></div>
+        <div class="personaje5"></div>
+        <div class="coche1"></div>
+        <div class="coche2"></div>
+
+      </div>
+
+
+  </body>
+</html>
